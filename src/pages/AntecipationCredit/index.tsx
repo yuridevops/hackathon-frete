@@ -80,7 +80,10 @@ export function AntecipationCredit() {
   }
 
   function handleConfirm() {
-    runReceive({ id: '447839', route: String(selectedRoute?.id) })
+    runReceive({
+      id: process.env.REACT_APP_URL_ANTECIPATION_PERSON as string,
+      route: String(selectedRoute?.id),
+    })
   }
 
   useEffect(() => {
@@ -88,7 +91,9 @@ export function AntecipationCredit() {
   }, [])
 
   async function fetchRoutes() {
-    runGetRoutes({ id: '447839' })
+    runGetRoutes({
+      id: process.env.REACT_APP_URL_ANTECIPATION_PERSON as string,
+    })
   }
 
   return (

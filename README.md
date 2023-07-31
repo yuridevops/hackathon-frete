@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# Antecipacao de Saldo para o Motorista
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação web responsiva que foi criada para permitir ao usuário a antecipação de saldo através do fluxo de viagens do Motorista no aplicativo da fretebras.
+![image](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![image](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![image](https://img.shields.io/badge/styled--components-DB7093?logo=styled-components&logoColor=white)
 
-## Available Scripts
+Esta aplicação simula o momento em que um motorista que tenha sido aprovado para antecipação de crédito, visualiza os fretes em andamento e solicita um adiantamento.
 
-In the project directory, you can run:
+É necessário informar as variaveis de ambiente para simular a tela de um caminhoneiro especifico, e apontar para o endereço da API, conforme o exemplo abaixo:
 
-### `yarn start`
+```bash
+GENERATE_SOURCEMAP=false
+REACT_APP_URL_ANTECIPATION=http://localhost:3333
+REACT_APP_URL_ANTECIPATION_PERSON=447839
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Running locally ▶️
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Clone the project
 
-### `yarn test`
+```bash
+  git clone git@github.com:yuridevops/hackathon-frete.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Go to the project directory
 
-### `yarn build`
+```bash
+  cd hackathon-frete
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Start the project with backend
 
-### `yarn eject`
+```bash
+  yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+or
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Access standalone remote application: `http://localhost:3000/`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Running Lint
 
-## Learn More
+To run lint, run the following command
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  yarn lint
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Checklist Author :book:
+
+[X] Design system
+
+[ ] Make the project more responsive
+
+[ ] Achieve reasonable test coverage
+
+## Related
+
+Here are some related projects
+
+[Hackathon Frete API](https://github.com/yuridevops/hackathon-frete-api/)
+<br/>
+
+## Licence
+
+[ISC](https://www.isc.org/licenses/)

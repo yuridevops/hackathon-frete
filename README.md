@@ -1,6 +1,7 @@
 # Antecipacao de Saldo para o Motorista
 
 Este projeto é uma aplicação web responsiva que foi criada para permitir ao usuário a antecipação de saldo através do fluxo de viagens do Motorista no aplicativo da fretebras.
+
 ![image](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 ![image](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
 ![image](https://img.shields.io/badge/styled--components-DB7093?logo=styled-components&logoColor=white)

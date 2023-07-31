@@ -7,8 +7,7 @@ export const Wrapper = styled.div`
     display: flex;
     gap: ${theme.padding.km2};
     flex-direction: column;
-    margin: 16px 0px 24px 0px;
-
+    margin: ${theme.padding.km4} 0px ${theme.padding.km6} 0px;
     justify-content: space-between;
     align-items: center;
   `}
@@ -18,10 +17,11 @@ export const FullAdvance = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: ${theme.padding.km2};
     height: 40px;
     background: ${({ theme }) => theme.color.background.neutral.weak};
-    padding: 16px 8px 16px 8px;
+    padding: ${theme.padding.km4} ${theme.padding.km2} ${theme.padding.km4}
+      ${theme.padding.km2};
     border-radius: ${({ theme }) => theme.border.radius.default};
   `}
 `

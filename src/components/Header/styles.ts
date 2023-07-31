@@ -11,8 +11,8 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 80px;
     display: flex;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: ${theme.padding.km6};
+    padding-right: ${theme.padding.km6};
 
     justify-content: space-between;
     align-items: center;

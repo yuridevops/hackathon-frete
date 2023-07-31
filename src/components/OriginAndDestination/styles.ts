@@ -38,7 +38,8 @@ export const Circle = styled.div`
   ${({ theme }) => css`
     height: 7px;
     width: 7px;
-    border: 1px solid ${theme.color.icon.neutral.weak};
+    border: ${theme.border.width.thinner} ${theme.border.style.solid}
+      ${theme.color.icon.neutral.weak};
     border-radius: ${theme.border.radius.circle};
   `}
 `
@@ -47,7 +48,8 @@ export const Square = styled.div`
   ${({ theme }) => css`
     height: 7px;
     width: 7px;
-    border: 1px solid ${theme.color.icon.neutral.weak};
+    border: ${theme.border.width.thinner} ${theme.border.style.solid}
+      ${theme.color.icon.neutral.weak};
   `}
 `
 

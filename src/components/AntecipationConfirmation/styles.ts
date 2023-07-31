@@ -25,22 +25,22 @@ export const Content = styled.div<{ open: boolean }>`
     border-top: ${theme.border.width.thinner} ${theme.border.style.solid}
       ${theme.color.border.neutral.medium};
     display: flex;
-    padding: 32px;
+    padding: ${theme.spacing.km8};
     height: ${open ? '300px' : 0};
     flex-direction: column;
-    gap: 16px;
+    gap: ${theme.padding.km4};
     transition: height ease-out 0.3s;
   `}
 `
 
 export const Terms = styled.div`
   display: flex;
-  gap: 8px;
+  gap: ${({ theme }) => theme.spacing.km2};
   color: ${({ theme }) => theme.color.text.neutral.strong};
 `
 
 export const Footer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: ${({ theme }) => theme.spacing.km4};
 `
